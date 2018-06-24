@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: client
+  cloud:
+    config:
+      uri: http://localhost:8000
+
+endpoints:
+  refresh:
+    enabled: true
+
+management:
+  security:
+    enabled: false
